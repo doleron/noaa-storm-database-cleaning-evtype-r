@@ -117,7 +117,7 @@ event_data$new_evetype <- unlist(lapply(event_data$EVTYPE,
 nrow(event_data[event_data$EVTYPE != event_data$new_evetype, ])
 
 ## number of unique new labels / clusters
-unique_new_evetype < unique(event_data$new_evetype)
+unique_new_evetype <- unique(event_data$new_evetype)
 length(unique_new_evetype)
 print(unique_new_evetype)
 
